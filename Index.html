@@ -10,11 +10,59 @@
 </head>
 <body>
     <!-- Título principal de la presentación -->
-    <header>
+    <header class="header">
         <h1>Atomic CSS, Utility-first y metodolgia BEM</h1>
         <h2>Presentando por: ANGY JULIANA FARASICA ELJAIEK, 
             RUBIEL FELIPE ROBLES CAMARGO y SERGIO ANDRÉS RANGEL MONTAÑA</h2>
     </header>
+
+    <!-- Sección de la metodologia BEM -->
+    <section class="section">
+        <article class="section__article">
+            <h2>BEM (Block, Element, Modifier)</h2>
+            <div>
+                <h3>Block</h3>
+                <p>Elemento independiente y reutilizable, como `card`.</p>
+            </div>
+            <div>
+                <h3>Element</h3>
+                <p>Parte del Block, ej. `card__title`.</p>
+            </div>
+            <div>
+                <h3>Modifier</h3>
+                <p>Variación o estado, ej. `card--highlighted`.</p>
+            </div>
+        </article>
+        <article class="section__image">
+            <img src="img/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_ccswpp14egeh7s231zlz.webp" alt="Ejemplo BEM">
+        </article>
+    </section>
+    
+    <section class="section__problems">
+        <h2>BEM: Problemas que Resuelve y Usos</h2>
+        <article class="problem-list">
+            <div class="problem-item">
+                <h3>Resuelve colisiones de nombres</h3>
+                <p>Evita conflictos y especificidad errónea en CSS.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Estructura clara</h3>
+                <p>Facilita organización y mantenimiento de estilos.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Casos de uso</h3>
+                <p>Proyectos grandes, equipos múltiples y componentes complejos.</p>
+            </div>
+            <div class="problem-item">
+                <h3>Ejemplo práctico</h3>
+                <p> 
+                    &lt;div class="card card--highlighted"&gt;
+                    &lt;h2 class="card__title"&gt;Título&lt;/h2&gt;
+                &lt;/div&gt;
+                </p>
+            </div>
+        </article>
+    </section>    
 
     <!-- Aquí se encuentran los anexos bibliograficos -->
     <footer></footer>

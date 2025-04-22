@@ -1,0 +1,123 @@
+/*  ESTILO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*  HEADER  */
+.header {
+    padding: 2rem;
+    text-align: center;
+    background-color: #111;
+    border-bottom: 2px solid #ff4f66;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*  SECTION METODOLOGÍA BEM  */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section__article {
+    flex: 1 1 45%;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section__article h2,
+.section__article h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.section__article p {
+    color: #cccccc;
+    font-size: 0.95rem;
+}
+
+.section__image {
+    flex: 1 1 45%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* PROBLEMAS  Y USOS DE BEM  */
+.section__problems {
+    background-color: #111;
+    padding: 3rem 2rem;
+}
+
+.section__problems h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.problem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.problem-item {
+    background-color: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.problem-item h3 {
+    color: #ff4f66;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.problem-item p {
+    font-size: 0.9rem;
+    color: #dddddd;
+}
+
+/*  FOOTER  */
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+    background-color: #0c0c0c;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
