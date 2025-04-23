@@ -123,6 +123,15 @@ img {
     border-radius: 10px;
 }
 
+.section__image img {
+    width: 50%;      /* Cambia este valor según el tamaño que desees */
+    margin: 0 auto;  /* Centra horizontalmente */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 1rem; /* Espacio interno */
+    background-color: #1a1a1a;
+}
+
+
 /* === SECTION: PROBLEMAS Y USOS === */
 .section__problems {
     background-color: #111; /* Fondo oscuro para la sección */
