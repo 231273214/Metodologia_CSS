@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página -->
+    <title>Atomic CSS, Utility-first y metodología BEM</title>
+    <!-- Link que cargara los estilos de la página -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Agregar Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Atomic CSS, Utility-first y metodología BEM</h1>
+        <h2>Presentado por: ANGY JULIANA FARASICA ELJAIEK, 
+            RUBIEL FELIPE ROBLES CAMARGO y SERGIO ANDRÉS RANGEL MONTAÑA</h2>
+    </header>
+
+        <!-- Menú de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Atomic CSS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Utility.html">Utility-first</a></li>
+                            <li class="nav-item"><a class="nav-link" href="BEM.html">BEM</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+
+    <!--Seccion Principal:Utility-First-->
+    <section class="section">
+        <article class="section__article">
+            <h2>Utility First</h2>
+            <div>
+                <p>
+                    Utility-first es una filosofía de desarrollo de interfaces donde se utilizan clases pequeñas 
+                    y reutilizables (utilities) directamente en el HTML para construir diseños. En lugar de 
+                    escribir CSS personalizado, se usan clases predefinidas como "text-center" "bg-blue-500" "p-4"
+                </p>
+            </div>
+        </article>
+        <article class="section__image">
+            <img src="img/Utility_first.webp" alt="Uso de Utility">
+        </article>
+    </section>
+
+    <!-- SECCIÓN: Ventajas y desventajas -->
+    <section class="section">
+        <article class="section__article">
+            <h2>Ventajas de Utility-First</h2>
+            <ul>
+                <div>   
+                    <h3>Rápido para prototipar</h3>
+                    <p>Se Pueden ver resultados inmediatos sin escribir CSS</p>
+                </div>
+                <div>   
+                    <h3>Código predecible y reutilizable</h3>
+                    <p>Las clases utilitarias son consistentes</p>
+                </div>
+                <div>   
+                    <h3>Menos CSS personalizado</h3>
+                    <p>Reduce el tamaño del archivo CSS final</p>
+                </div>
+                <div>   
+                    <h3>Alto control visual</h3>
+                    <p>Permite ajustar rápidamente márgenes, colores, tamaños, etc., desde el HTML</p>
+                </div>
+            </ul>
+        </article>
+        <article class="section__article">
+            <h2>Desventajas de Utility-First</h2>
+            <ul>
+                <div>   
+                    <h3>HTML sobrecargado</h3>
+                    <p>Puede volverse tedioso de leer por tantas clases dificultando su mantenimiento</p>
+                </div>
+                <div>   
+                    <h3>Puede costar aprender al inicio</h3>
+                    <p>Muchas clases tienen nombres especificos como "pt-2,flex,items-center" llegando a ser confuso</p>
+                </div>
+                <div>   
+                    <h3>En proyectos grandes puede ser difícil de organizar</h3>
+                    <p>Si no se sigue una estructura clara, el código se puede volver desordenado o repetitivo</p>
+                </div>
+            </ul>
+        </article>
+    </section>
+
+    <!-- SECCIÓN: Popularidad -->
+    <section class="section__problems">
+        <h2>Popularidad en proyectos modernos</h2>
+        <article class="problem-list">
+            <div class="problem-item">
+                <p>
+                    Velocidad de desarrollo ideal para entornos ágiles y prototipado
+                    rápido
+                </p>
+            </div>
+            <div class="problem-item">
+                <p>
+                    Compatiblidad con frameworks modernos como React,Vue y Angular
+                </p>
+                    
+            </div>
+            <div class="problem-item">
+                <p>
+                    Comunidad Activa y en constante desarrollo con una documentación 
+                    excelente
+                </p>
+            </div>
+            <div class="problem-item">
+                <p>
+                    Integra Bien con diseño responsive y el dark mode de forma nativa
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Anexos bibliográficos:</p>
+        <p><a href="https://tailwindcss.com/docs/utility-first" target="_blank">Tailwind CSS – Utility-First</a></p>
+        <p><a href="https://acss.io/" target="_blank">Atomic CSS Official</a></p>
+        <p><a href="https://css-tricks.com/atomic-css-web-components/" target="_blank">CSS-Tricks: Atomic CSS y Web Components</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
