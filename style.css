@@ -1,4 +1,4 @@
-/*  ESTILO GENERAL */
+/* === ESTILO GENERAL === */
 * {
     margin: 0;
     padding: 0;
@@ -7,21 +7,32 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0e0e0e;
+    background-color: #0e0e0e; /* Fondo negro */
     color: #ffffff;
     line-height: 1.6;
+    min-height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
+}
+
+a {
+    color: #ff4f66;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img {
     max-width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
-/*  HEADER  */
+/* === HEADER === */
 .header {
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
-    background-color: #111;
+    background-color: #111; /* Fondo oscuro */
     border-bottom: 2px solid #ff4f66;
 }
 
@@ -32,13 +43,44 @@ img {
 }
 
 .header h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #cccccc;
     max-width: 800px;
     margin: 0 auto;
+    line-height: 1.5;
 }
 
-/*  SECTION METODOLOGÍA BEM  */
+/* === MENÚ (NAVBAR) === */
+.navbar {
+    display: flex;
+    justify-content: center; /* Centra los elementos en el contenedor de la navbar */
+    align-items: center; /* Alinea los elementos verticalmente */
+    width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
+    border-bottom: 2px solid #ff4f66;
+    background-color: #111; /* Fondo oscuro para el menú */}
+
+.navbar-brand {
+    color: #ff4f66; /* Color rosa para el nombre de la marca */
+    display: flex;
+    align-items: center;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos dentro de la navbar */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #ffffff !important; /* Color blanco para los enlaces */
+    padding: 0.5rem 1rem; /* Espaciado dentro de los enlaces */
+}
+
+.nav-item a:hover {
+    color: #ff4f66 !important; /* Color rosa al hacer hover */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* === SECTION: METODOLOGÍA BEM === */
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -46,6 +88,7 @@ img {
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
+    background-color: #111; /* Fondo oscuro para las secciones */
 }
 
 .section__article {
@@ -63,20 +106,26 @@ img {
     margin-bottom: 1rem;
 }
 
+.section__article ul li {
+    color: #ffffff;
+}
+
 .section__article p {
     color: #cccccc;
     font-size: 0.95rem;
 }
 
+/* Imagen de la sección */
 .section__image {
     flex: 1 1 45%;
+    background-color: #1a1a1a;
+    padding: 1rem;
     border-radius: 10px;
-    overflow: hidden;
 }
 
-/* PROBLEMAS  Y USOS DE BEM  */
+/* === SECTION: PROBLEMAS Y USOS === */
 .section__problems {
-    background-color: #111;
+    background-color: #111; /* Fondo oscuro para la sección */
     padding: 3rem 2rem;
 }
 
@@ -84,6 +133,7 @@ img {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: #ffffff;
 }
 
 .problem-list {
@@ -110,14 +160,28 @@ img {
 .problem-item p {
     font-size: 0.9rem;
     color: #dddddd;
+    word-wrap: break-word;
 }
 
-/*  FOOTER  */
+/* === FOOTER === */
 footer {
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
-    color: #666;
-    background-color: #0c0c0c;
-    font-size: 0.9rem;
-    margin-top: 2rem;
+    color: #aaaaaa;
+    background-color: #0c0c0c; /* Fondo oscuro */
+    font-size: 1rem;
+    margin-top: 0; /* Eliminamos cualquier margen */
+}
+
+/* Elimina espacio extra que puede quedar debajo del footer */
+footer a {
+    color: #ff4f66;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
 }
