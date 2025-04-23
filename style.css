@@ -1,4 +1,4 @@
-/* === ESTILO GENERAL === */
+/*=== ESTILO GENERAL ===*/
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +7,10 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0e0e0e; /* Fondo negro */
+    background-color: #0e0e0e; 
     color: #ffffff;
     line-height: 1.6;
-    min-height: 100vh; /* Asegura que el body ocupe todo el alto de la ventana */
+    min-height: 100vh; 
 }
 
 a {
@@ -32,7 +32,7 @@ img {
 .header {
     padding: 3rem 1rem;
     text-align: center;
-    background-color: #111; /* Fondo oscuro */
+    background-color: #111; 
     border-bottom: 2px solid #ff4f66;
 }
 
@@ -53,32 +53,45 @@ img {
 /* === MENÚ (NAVBAR) === */
 .navbar {
     display: flex;
-    justify-content: center; /* Centra los elementos en el contenedor de la navbar */
-    align-items: center; /* Alinea los elementos verticalmente */
-    width: 100%; /* Asegura que la barra de navegación ocupe todo el ancho */
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
     border-bottom: 2px solid #ff4f66;
-    background-color: #111; /* Fondo oscuro para el menú */}
+    background-color: #111; 
+    padding: 0.5rem 0;
+}
 
 .navbar-brand {
-    color: #ff4f66; /* Color rosa para el nombre de la marca */
+    color: #ff4f66; 
     display: flex;
     align-items: center;
 }
+
 .navbar-nav {
+    margin: 0 auto;
     display: flex;
-    justify-content: center; /* Centra los elementos dentro de la navbar */
+    justify-content: center;
+    gap: 1rem;
 }
 
 .navbar-nav .nav-link {
     font-size: 1.1rem;
-    color: #ffffff !important; /* Color blanco para los enlaces */
-    padding: 0.5rem 1rem; /* Espaciado dentro de los enlaces */
+    color: #ffffff !important; 
+    padding: 0.5rem 1rem; 
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.nav-item a:hover {
-    color: #ff4f66 !important; /* Color rosa al hacer hover */
-    text-decoration: underline; /* Subrayado al pasar el cursor */
+.navbar-nav .nav-link:hover {
+    color: #ff4f66 !important;
+    border-color: #ff4f66;
+    background-color: rgba(255, 79, 102, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 79, 102, 0.2);
+    text-decoration: none;
 }
+
 
 /* === SECTION: METODOLOGÍA BEM === */
 .section {
@@ -88,9 +101,8 @@ img {
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
-    background-color: #111; /* Fondo oscuro para las secciones */
+    background-color: #111; 
 }
-
 .section__article {
     flex: 1 1 45%;
     background-color: #1a1a1a;
@@ -125,7 +137,7 @@ img {
 
 /* === SECTION: PROBLEMAS Y USOS === */
 .section__problems {
-    background-color: #111; /* Fondo oscuro para la sección */
+    background-color: #111; 
     padding: 3rem 2rem;
 }
 
@@ -168,12 +180,11 @@ footer {
     padding: 2.5rem;
     text-align: center;
     color: #aaaaaa;
-    background-color: #0c0c0c; /* Fondo oscuro */
+    background-color: #0c0c0c; 
     font-size: 1rem;
-    margin-top: 0; /* Eliminamos cualquier margen */
+    margin-top: 0; 
 }
 
-/* Elimina espacio extra que puede quedar debajo del footer */
 footer a {
     color: #ff4f66;
 }
